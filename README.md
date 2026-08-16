@@ -1,101 +1,126 @@
-# 专升本学习助手（开源演示版）
+# Study Assistant for College Upgrade Exam (专升本学习助手)
 
 <p align="center">
-  <img src="assets/screenshots/dashboard.png" alt="首页" width="720"/>
+  <a href="https://wiexi220.github.io/weix/">
+    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Live%20Demo-Click%20to%20Try-brightgreen?style=for-the-badge" alt="Live Demo"/>
+  </a>
+  <a href="https://github.com/wiexi220/weix/blob/main/README.zh-CN.md">
+    <img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87%E7%89%88%E6%9C%AC-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-blue?style=for-the-badge" alt="中文版"/>
+  </a>
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/platform-PWA%20%2F%20Mobile%20%2F%20Desktop-orange?style=for-the-badge" alt="Platform"/>
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/quiz.png" alt="测验页" width="352"/>
-  <img src="assets/screenshots/study.png" alt="学习页" width="352"/>
+  <img src="assets/screenshots/dashboard.png" alt="Dashboard" width="720"/>
 </p>
 
-> 🎓 一个**纯前端、零依赖、双击即用**的专升本备考应用框架。
-> 支持高数 / 英语 / 计算机三科：考纲考点、每日学习任务、定时测验、错题本、模拟卷、AI 讲解。
+<p align="center">
+  <img src="assets/screenshots/quiz.png" alt="Quiz" width="352"/>
+  <img src="assets/screenshots/study.png" alt="Study" width="352"/>
+</p>
 
-本仓库为**程序框架（开源壳子）**：全部代码、界面与自编示例资料在此，**不含任何历年真题内容**（真题有版权，随个人使用版保留，不随本仓库分发）。
+> 🎓 A **pure frontend, zero-dependency, double-click-to-run** study assistant for the College Upgrade Exam (专升本), covering **Advanced Math, College English and Computer Basics** — syllabus points, daily study tasks, timed quizzes, wrong-answer notebook, mock exams, and AI-powered explanations.
 
----
+This repository is the **open-source framework (shell)** — all code, UI and self-authored sample materials are included. It does **NOT** include any copyrighted past exam papers (真题), which remain in the personal edition.
 
-## ✨ 功能一览
+## 🚀 Live Demo
 
-| 模块 | 说明 |
+**https://wiexi220.github.io/weix/**
+
+Open it in any browser on phone or desktop — no installation needed. Works offline via PWA.
+
+## ✨ Features
+
+| Module | Description |
 |---|---|
-| 📋 考纲 | 三科考纲速览，模块化考点，优先级标注（必考/常考/低频） |
-| 📚 学习 | 分模块考点讲解 + 例题 + 随堂练习；英语语法 22 专题、写作模板、AI 作文批改 |
-| 📝 测验 | 每日检测 / 专项练习 / 模拟卷（按考纲题型布局）/ 错题重练，内置计时器 |
-| 🔁 顺序练习 | 按题库顺序刷题，**进度自动记忆**，下次接着上次位置继续 |
-| ✂️ 斩题 | 一眼就会的题一键「斩掉」，移出普通练习池，专心刷不会的；可随时恢复 |
-| 🧠 智能复习 | 错题按遗忘曲线（1/3/7/15/30 天）自动安排复习，首页显示「今日待复习」 |
-| 🧩 多空填空 | 填空题支持多个空格分开作答、分别判分 |
-| 🎲 选项打乱 | 固定 A/B/C/D 标签、内容随机映射，防止背选项位置（可在设置关闭） |
-| 🤖 AI 讲解 | 可联网调用大模型自主出题、逐题讲解（需自备 API Key） |
-| 📅 每日任务 | 词汇记忆 + 高数 + 英语任务，打卡记录，番茄钟 |
-| 📕 错题本 | 自动收集错题，同类题推荐，掌握度追踪 |
-| 📊 报告 | 学习热力图、月度概览、薄弱模块雷达图、成就徽章 |
-| 📱 双端 | 自适应布局：手机底部栏 / 电脑侧边栏，数据本地保存 |
+| 📋 Syllabus | Exam syllabus for 3 subjects, module-based points, priority badges (must-know / frequent / rare) |
+| 📚 Study | Module-by-module explanations + examples + practice; 22 English grammar topics, writing templates, AI essay grading |
+| 📝 Quiz | Daily check / topic practice / mock exams (aligned with syllabus structure) / wrong-answer redo, built-in timer |
+| 🔁 Sequential Practice | Study questions in bank order, **progress auto-saved** — resume where you left off |
+| ✂️ Cut Questions | One-click "cut" questions you already know out of the normal practice pool; restore anytime |
+| 🧠 Smart Review | Wrong answers auto-scheduled by forgetting curve (1/3/7/15/30 days); "Today Due" shown on dashboard |
+| 🧩 Multi-Blank Fill | Fill-in-the-blank questions support multiple blanks answered separately |
+| 🎲 Shuffled Options | Fixed A/B/C/D labels with shuffled content mapping (prevents memorizing option positions; can be disabled) |
+| 🤖 AI Tutor | Optional: connect any OpenAI-compatible API for AI-generated questions, explanations and essay grading |
+| 📅 Daily Tasks | Vocabulary memorization + math + English tasks with check-in and Pomodoro timer |
+| 📕 Wrong Book | Auto-collects wrong answers, similar-question recommendations, mastery tracking |
+| 📊 Reports | Study heatmap, monthly overview, weak-module radar chart, achievement badges |
+| 📱 Multi-platform | Responsive: bottom bar on mobile, sidebar on desktop; data stored locally |
 
-## 🚀 快速开始
+## 🧮 Code Statistics
 
-**方式一：直接打开**（无需安装）
-双击 `index.html` 即可在浏览器使用，所有数据保存在本地浏览器。
+| Category | Lines | Files |
+|---|---|---|
+| 🧠 Application code (JS) | 2,971 | 12 |
+| 📚 Data content | 9,399 | 29 |
+| 📄 HTML | 93 | 1 |
+| 🎨 CSS | 298 | 1 |
+| 🔧 Other (PWA manifest, service-worker) | 145 | 2 |
+| **Total** | **12,906** | **45** |
 
-**方式二：本地服务器**
+## 🚀 Quick Start
+
+**Option 1: Just open it** (no install)
+Double-click `index.html` — everything works, data saved in your browser.
+
+**Option 2: Local server**
 ```bash
 python -m http.server 8080
-# 然后访问 http://localhost:8080
+# then visit http://localhost:8080
 ```
 
-**方式三：在线预览**
-GitHub Pages 已启用：https://wiexi220.github.io/weix/
+**Option 3: Online**
+https://wiexi220.github.io/weix/
 
-## 🧱 项目结构
+## 🧱 Project Structure
 
 ```
-├── index.html            页面骨架（单页应用）
-├── js/                   程序代码
-│   ├── app.js            主程序（路由/渲染/交互）
-│   ├── quiz.js           测验引擎（组卷/判分/模拟卷蓝图）
-│   ├── generator.js      出题生成器（离线无限出题）+ 题库聚合
-│   ├── ai.js             AI 联网讲解 / 作文批改
-│   ├── storage.js        本地存储与备份
-│   └── ...               各功能 UI 组件
-├── data/                 数据层（均为自编资料，无版权内容）
-│   ├── syllabus.js       考纲
-│   ├── math.js/english.js/computer.js   考点资料
-│   ├── easy-*.js         基础练习题
-│   ├── listening*.js/reading*.js        听力/阅读自编材料
+├── index.html            Page skeleton (single-page app)
+├── js/                   Application code
+│   ├── app.js            Main program (router / render / interactions)
+│   ├── quiz.js           Quiz engine (build / grade / mock blueprint)
+│   ├── generator.js      Question generator (offline unlimited) + bank aggregation
+│   ├── ai.js             AI explanations / essay grading
+│   ├── storage.js        localStorage persistence & backup
+│   └── ...               Feature UI components
+├── data/                 Data layer (all self-authored, no copyrighted content)
+│   ├── syllabus.js       Exam syllabus
+│   ├── math.js/english.js/computer.js   Subject materials
+│   ├── easy-*.js         Basic practice questions
+│   ├── listening*.js/reading*.js        Listening/reading materials
 │   └── ...
-├── assets/               样式 / KaTeX 公式渲染 / 图标 / 截图
-├── manifest.webmanifest  PWA 清单
-└── service-worker.js     离线缓存
+├── assets/               Styles / KaTeX / icons / screenshots
+├── manifest.webmanifest  PWA manifest
+└── service-worker.js     Offline cache
 ```
 
-## 🔌 接入自己的题库
+## 🔌 Bring Your Own Question Bank
 
-题库数据均为纯 JS 对象，格式见 `data/easy-math.js`（最简单）：
+Question banks are plain JS objects — see `data/easy-math.js` for the simplest format:
 ```js
 window.EASY_MATH_DATA = { questions: [{
   id: "ezm1", type: "single", module: "m1",
-  stem: "函数 y=x³ 的导数是（ ）。",
+  stem: "The derivative of y = x³ is ( ).",
   options: ["3x²","x²","3x","2x²"],
   answer: "A",
-  explain: "幂函数求导公式为 (xⁿ)' = n·xⁿ⁻¹，所以 (x³)' = 3x²。",
+  explain: "Power rule: (xⁿ)' = n·xⁿ⁻¹, so (x³)' = 3x².",
   difficulty: 1
 }]};
 ```
-把题目文件放入 `data/` 并在 `index.html` 中加一行 `<script src="data/你的文件.js">` 即可。
+Drop your file into `data/` and add `<script src="data/your-file.js">` to `index.html`.
 
-**多空填空题**：填空题如需多空，答案用 `|` 分隔（如 `answer: "2|3"`），界面会自动拆成多个输入框分别作答。
+**Multi-blank fill questions**: separate blank answers with `|` (e.g. `answer: "2|3"`) — the UI will render one input per blank.
 
-## 🤖 配置 AI 讲解（可选）
+## 🤖 AI Tutor (Optional)
 
-在「设置」页填入你自己的 API Key（OpenAI 兼容接口），即可使用联网出题与逐题讲解。不配置也不影响离线功能。
+In the Settings page, fill in your own API Key for any OpenAI-compatible endpoint (DeepSeek endpoint pre-filled). Offline features work without it.
 
-## 📄 许可
+## 📄 License
 
-MIT License —— 代码可自由使用、修改、分发。
-注意：本仓库**不含真题**；若你要加入真题/教材内容，请自行确认版权，风险自负。
+MIT License — free to use, modify and distribute.
+Note: this repository does **NOT** include past exam papers; if you add copyrighted content, ensure you have the rights. Use at your own risk.
 
 ---
 
-**免责声明**：本工具仅作学习辅助，考纲与考点请以重庆市教育考试院官方发布为准。
+**Disclaimer**: This tool is for study assistance only. Always refer to the official syllabus published by the local education examination authority.
