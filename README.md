@@ -1,5 +1,14 @@
 # 专升本学习助手（开源演示版）
 
+<p align="center">
+  <img src="assets/screenshots/dashboard.png" alt="首页" width="720"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/quiz.png" alt="测验页" width="352"/>
+  <img src="assets/screenshots/study.png" alt="学习页" width="352"/>
+</p>
+
 > 🎓 一个**纯前端、零依赖、双击即用**的专升本备考应用框架。
 > 支持高数 / 英语 / 计算机三科：考纲考点、每日学习任务、定时测验、错题本、模拟卷、AI 讲解。
 
@@ -36,6 +45,9 @@ python -m http.server 8080
 # 然后访问 http://localhost:8080
 ```
 
+**方式三：在线预览**
+GitHub Pages 已启用：https://wiexi220.github.io/weix/
+
 ## 🧱 项目结构
 
 ```
@@ -53,7 +65,7 @@ python -m http.server 8080
 │   ├── easy-*.js         基础练习题
 │   ├── listening*.js/reading*.js        听力/阅读自编材料
 │   └── ...
-├── assets/               样式 / KaTeX 公式渲染 / 图标
+├── assets/               样式 / KaTeX 公式渲染 / 图标 / 截图
 ├── manifest.webmanifest  PWA 清单
 └── service-worker.js     离线缓存
 ```
