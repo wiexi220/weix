@@ -1,0 +1,14 @@
+{
+  "name": "重庆专升本·三科学习助手",
+  "short_name": "专升本助手",
+  "description": "高数/英语/计算机 备考学习助手：每日任务、测验、错题本、真题",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#2b5ce6",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

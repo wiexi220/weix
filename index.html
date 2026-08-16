@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#2b5ce6">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>专升本学习助手 · 开源演示版（不含真题数据）</title>
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/katex/katex.min.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">🎓 专升本助手</div>
+    <div class="brand-sub">重庆 · 2027</div>
+    <nav>
+      <a href="#/dashboard" data-nav="dashboard">🏠 <span>首页</span></a>
+      <a href="#/syllabus" data-nav="syllabus">📋 <span>考纲</span></a>
+      <a href="#/study/gaoshu" data-nav="study">📚 <span>学习</span></a>
+      <a href="#/quiz" data-nav="quiz">📝 <span>测验</span></a>
+      <a href="#/daily" data-nav="daily">📅 <span>每日任务</span></a>
+      <a href="#/wrongbook" data-nav="wrongbook">📕 <span>错题本</span></a>
+      
+      <a href="#/settings" data-nav="settings">⚙️ <span>设置</span></a>
+    </nav>
+    <div class="sidebar-foot">严格按考纲 · 考点全覆盖<br>数据本地保存</div>
+  </aside>
+
+  <main class="main">
+    <div id="view"></div>
+  </main>
+
+  <nav class="bottombar">
+    <a href="#/dashboard" data-nav="dashboard">🏠<span>首页</span></a>
+    <a href="#/syllabus" data-nav="syllabus">📋<span>考纲</span></a>
+    <a href="#/study/gaoshu" data-nav="study">📚<span>学习</span></a>
+    <a href="#/quiz" data-nav="quiz">📝<span>测验</span></a>
+    <a href="#/daily" data-nav="daily">📅<span>任务</span></a>
+    <a href="#/settings" data-nav="settings">⚙️<span>设置</span></a>
+  </nav>
+</div>
+
+<script src="data/syllabus.js"></script>
+<script src="data/math.js"></script>
+<script src="data/english.js"></script>
+<script src="data/computer.js"></script>
+<script src="data/extra-math.js"></script>
+<script src="data/extra-english.js"></script>
+<script src="data/extra-computer.js"></script>
+<script src="data/listening.js"></script>
+<script src="data/listening-extra.js"></script>
+<script src="data/reading.js"></script>
+<script src="data/reading-extra.js"></script>
+<script src="data/listening-extra2.js"></script>
+<script src="data/intros.js"></script>
+<script src="data/priority.js"></script>
+<script src="data/blueprints.js"></script>
+<script src="data/tips-math.js"></script>
+<script src="data/tips-computer.js"></script>
+<script src="data/vocab-extra.js"></script>
+<script src="data/vocab-extra2.js"></script>
+<script src="data/vocab-extra3.js"></script>
+<script src="data/vocab-extra4.js"></script>
+<script src="data/vocab-extra5.js"></script>
+<script src="data/phrases-extra.js"></script>
+<script src="data/reading-extra2.js"></script>
+<script src="data/reading-extra3.js"></script>
+<script src="data/listening-extra3.js"></script>
+<script src="data/easy-math.js"></script>
+<script src="data/easy-english.js"></script>
+<script src="data/easy-computer.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/generator.js"></script>
+<script src="assets/katex/katex.min.js"></script>
+<script src="js/math-render.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/func-gallery.js"></script>
+<script src="js/listening-ui.js"></script>
+<script src="js/reading-ui.js"></script>
+<script src="js/computer-svg.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/app.js"></script>
+<script>
+  if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
+    navigator.serviceWorker.register("service-worker.js").catch(function () {});
+  }
+</script>
+</body>
+</html>
